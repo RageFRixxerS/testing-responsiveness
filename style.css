@@ -23,13 +23,9 @@ footer {
   color: midnightblue;
 }
 
-.card{
-  width: 45%;
-}
-
 .tile-image{
-  height: 200px;
   float: left;
+  height: 200px;
   margin-right: 50px;
 }
 
@@ -41,25 +37,30 @@ footer {
   float: right;
 }
 
-@media(max-width:680px){
-  .logo{
-    width: 100px;
-  }
+.card{
+  width: 45%;
+}
 
+@media(max-width:680px){
   h1{
     font-size: 3.5rem;
     text-align: center;
   }
 
-  .card{
-    display: block;
-    width: 100%;
-    margin-bottom: 30px;
+  .logo{
+    width: 100px;
   }
 
   .tile-image{
-    width: 100%;
     object-fit: cover;
     margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .card{
+    display: block;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 30px;
   }
 }
